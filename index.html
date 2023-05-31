@@ -8,30 +8,22 @@
     <style>
         #map {
             height: 400px;
-            width: 100px;
+            width: 400px;
         }
     </style>
 </head>
 <body>
     <h1>My google map</h1>
+    <!-- id = map är kallad i script.js filen för att visa kartan -->
     <div id ="map"></div>
-    <script>
-        function initMap(){
-            var options = {
-                zoom:8,
-                center:{lat:42.3601, lng:-71.0589}
-        }
-            var map = new 
-            google.maps.Map(document.getElementById("map"), options);
-    }
-    initMap();
-    </script>
-   
-    key="AIzaSyCrJHkCgY5bRtqGc-FZVxt3rZ7SrJtaczE"
-    
+
+    <!-- connect to maps API and paste in your key from google -->
     <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrJHkCgY5bRtqGc-FZVxt3rZ7SrJtaczE&callback=initMap">
     </script>
+
+<!-- kallar filen script.js där kod för kartan finns  -->
+    <script src="/script.js"></script>
 
 </body>
 </html>
